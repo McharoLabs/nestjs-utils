@@ -12,7 +12,10 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "tsconfig.json",
+    "tsconfig.build.json"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
@@ -26,10 +29,6 @@
     "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --runInBand",
     "check": "npm run typecheck && npm run lint && npm run test:coverage && npm run build",
     "prepublishOnly": "npm run check"
-  },
-  "allowScripts": {
-    "nestjs-utils": true,
-    "bcrypt@6.0.0": true
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -71,5 +70,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "allowScripts": {
+    "nestjs-utils": true,
+    "bcrypt@6.0.0": true
+  }
 }
