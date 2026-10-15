@@ -67,5 +67,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "allowScripts": {
+    "bcrypt@6.0.0": true
+  }
 }
