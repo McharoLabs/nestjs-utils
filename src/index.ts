@@ -3,7 +3,6 @@ export * from './date';
 export * from './excel';
 export * from './file';
 export * from './hash';
-export * from './html';
 export * from './math';
 export * from './string';
 export * from './xml';
