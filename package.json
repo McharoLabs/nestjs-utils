@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "prepare": "npm run build",
+    "postinstall": "npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" --fix",
@@ -26,6 +26,10 @@
     "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --runInBand",
     "check": "npm run typecheck && npm run lint && npm run test:coverage && npm run build",
     "prepublishOnly": "npm run check"
+  },
+  "allowScripts": {
+    "nestjs-utils": true,
+    "bcrypt@6.0.0": true
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -67,8 +71,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "UNLICENSED",
-  "allowScripts": {
-    "bcrypt@6.0.0": true
-  }
+  "license": "UNLICENSED"
 }
