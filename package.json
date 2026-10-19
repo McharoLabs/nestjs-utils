@@ -1,6 +1,6 @@
 {
   "name": "@mcharolabs/nestjs-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A reusable TypeScript utility library for strings, dates, files, Excel, hashing, HTML, XML, mathematics, and client information",
   "type": "commonjs",
   "main": "./dist/index.js",
